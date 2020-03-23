@@ -1,0 +1,99 @@
+@font-face {
+    font-family:'iconfont';
+    src: url('../assets/fonts/iconfont.eot');
+    src: url('../assets/fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/iconfont.woff2') format('woff2'),
+        url('../assets/fonts/iconfont.woff') format('woff'),
+        url('../assets/fonts/iconfont.ttf') format('truetype'),
+        url('../assets/fonts/iconfont.svg#iconfont') format('svg');
+  }
+
+  .icon{
+    font-family: "iconfont" !important;
+    font-size: 18px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-camera{
+      &:before {
+        @extend .icon;
+        content: "\e608";
+      }
+  }
+  
+  .icon-code:before {
+    @extend .icon;
+    content: "\e60c";
+  }
+  
+  .icon-copy:before {
+    @extend .icon;
+    content: "\e60e";
+  }
+  
+  .icon-delete:before {
+    @extend .icon;
+    content: "\e60f";
+  }
+  
+  .icon-file:before {
+    @extend .icon;
+    content: "\e61a";
+  }
+  
+  .icon-home:before {
+    @extend .icon;
+    content: "\e626";
+  }
+  
+  .icon-loading:before {
+    @extend .icon;
+    content: "\e62b";
+  }
+  
+  .icon-message:before {
+    @extend .icon;
+    content: "\e631";
+  }
+  
+  .icon-my:before {
+    @extend .icon;
+    content: "\e635";
+  }
+  
+  .icon-notification:before {
+    @extend .icon;
+    content: "\e637";
+  }
+  
+  .icon-person2:before {
+    @extend .icon;
+    content: "\e63a";
+  }
+  
+  .icon-refresh:before {
+    @extend .icon;
+    content: "\e640";
+  }
+  
+  .icon-ringpause:before {
+    @extend .icon;
+    content: "\e643";
+  }
+  
+  .icon-roundcheck:before {
+    @extend .icon;
+    content: "\e646";
+  }
+  
+  .icon-sitting:before {
+    @extend .icon;
+    content: "\e64c";
+  }
+  
+  .icon-tag:before {
+    @extend .icon;
+    content: "\e64d";
+  }

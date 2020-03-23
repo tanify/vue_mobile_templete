@@ -1,0 +1,126 @@
+.dialog {
+    width: 100%;
+    height: 100%;
+    align-items: 'center';
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+
+    .dialog-layer {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, .6);
+        z-index:1;
+    }
+
+    .dialog-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+
+        .content-innner {
+            width: 80%;
+            // height:300px;
+            // background: #fff;
+            border-radius: 4px;
+            position:relative;
+            z-index:2;
+        }
+    }
+}
+
+.dialog-title {
+    padding-top: 15px;
+    text-align:center;
+    font-weight:normal;
+}
+
+.dialog-info {
+    padding: 14px;
+    min-height: 50px;
+}
+
+.dialog-footer {
+    display: flex;
+    height: 45px;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 100%;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 1px;
+        background: #000;
+        opacity: .6;
+        transform: scaleY(.5);
+    }
+
+    >div {
+        flex: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:last-child {
+            color: orange;
+            position: relative;
+
+            &:before {
+                content: "";
+                height: calc(100% - 0.5px);
+                margin-top: 1px;
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 1px;
+                background: #000;
+                opacity: .6;
+                transform: scaleX(.5);
+            }
+        }
+    }
+}
+
+.fadeLayer-enter {
+    opacity: 0
+}
+
+.fadeLayer-enter-active {
+    transition: opacity .2s linear;
+}
+
+.fadeLayer-leave-active {
+    transition: opacity .2s linear;
+}
+
+.fadeLayer-leave-to {
+    opacity: 0;
+}
+
+.dialog-enter,.dialog-leave-to{
+    transform:scale(.1);
+}
+.dialog-enter-to{
+    transform:scale(1);
+}
+.dialog-enter-active {
+    transition:transform .3s cubic-bezier(0.550, 0.055, 0.165, 0.945);
+}
+.dialog-leave-active {
+    transition: transform .3s cubic-bezier(0.550, 0.055, 0.165, 0.945);
+}
