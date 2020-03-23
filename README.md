@@ -7,9 +7,12 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run start
 ```
-
+### Build a Dll
+```
+npm run dll
+```
 ### Compiles and minifies for production
 ```
 npm run build
@@ -18,8 +21,7 @@ npm run build
 this is a line
 ```
 ### Run your tests
-```
-npm run test
+
 ```
 
 ### Lints and fixes files
